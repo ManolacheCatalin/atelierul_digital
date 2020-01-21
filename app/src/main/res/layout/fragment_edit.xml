@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <EditText
+        android:id="@+id/title_edit_id"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Trip name"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/destination_edit_id"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Destination"
+        android:ems="10"
+        android:inputType="textPersonName" />
+
+    <RadioGroup
+        android:id="@+id/group_radio_edit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RadioButton
+            android:id="@+id/radio_edit_city"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="City Break" />
+
+        <RadioButton
+            android:id="@+id/radio_edit_seaSide"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Sea Side" />
+
+        <RadioButton
+            android:id="@+id/radio_edit_mountains"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Mountains" />
+
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/price_edit_id"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Price" />
+
+    <SeekBar
+        android:id="@+id/price_slider_edit_id"
+        android:layout_width="match_parent"
+        android:max="10000"
+        android:layout_height="wrap_content" />
+
+    <EditText
+        android:id="@+id/Start_edit_id"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:focusable="false"
+        android:hint="Start date"
+        android:ems="10"
+        android:clickable="true"
+        android:inputType="text" />
+
+    <EditText
+        android:id="@+id/End_edit_id"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="End date"
+        android:ems="10"
+        android:clickable="true"
+        android:focusable="false"
+        android:inputType="text" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Rating">
+    </TextView>
+
+    <RatingBar
+        android:id="@+id/rating_edit_id"
+        android:layout_width="wrap_content"
+        android:layout_height="25dp"
+        android:progressDrawable="@drawable/custom_ratingbar_selector"
+        android:numStars="5" />
+
+    <Button
+        android:id="@+id/btn_edit_gallery_id"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Gallery" />
+
+    <Button
+        android:id="@+id/btn_edit_camera_id"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Camera" />
+
+    <Button
+        android:id="@+id/btn_save_edit_trip_id"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Save " />
+
+</LinearLayout>

@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/firstLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/secondView"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/media_view_id"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"></ImageView>
+    </LinearLayout>
+
+    <View
+        android:id="@+id/secondView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_centerVertical="true" />
+
+    <LinearLayout
+        android:id="@+id/thirdLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignTop="@id/secondView"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/title_view_id"
+            android:layout_width="match_parent"
+            android:textSize="17sp"
+            android:fontFamily="@font/work_sans_semibold"
+            android:layout_height="wrap_content"
+            android:text="Paris trip on septembre" />
+
+        <TextView
+            android:id="@+id/destination_view_id"
+            android:layout_width="match_parent"
+            android:textSize="14sp"
+            android:fontFamily="@font/work_sans_medium"
+            android:layout_height="wrap_content"
+            android:text="paris?france" />
+
+        <TextView
+            android:id="@+id/price_view_id"
+            android:layout_width="match_parent"
+            android:textSize="14sp"
+            android:fontFamily="@font/work_sans_medium"
+            android:layout_height="wrap_content"
+            android:text="1500 RON" />
+
+        <RatingBar
+            android:id="@+id/rating_view_id"
+            android:layout_width="match_parent"
+            android:layout_height="25dp"
+            android:clickable="false"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:max="5"
+            android:progressDrawable="@drawable/custom_ratingbar_selector" />
+
+        <TextView
+            android:id="@+id/type_view_id"
+            android:layout_width="match_parent"
+            android:textSize="14sp"
+            android:fontFamily="@font/work_sans_medium"
+            android:layout_height="wrap_content"
+            android:text="City Break" />
+
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#344955</color>
+    <color name="colorPrimaryDark">#232F34</color>
+    <color name="colorAccent">#F9AA33</color>
+    <color name="color_divider">#4A6572</color>
+    <color name="surface_cardView">#FFFFFF</color>
+    <color name="title_text_card">#232F34</color>
+    <color name="body_text_card">#232F34</color>
+    <color name="icon_fill_card">#232F34</color>
+    <color name="background_color_container">#bdbdbd</color>
+    <color name="background_color_container2">#90a4ae</color>
+</resources>
